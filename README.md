@@ -8,6 +8,8 @@ Compile drivers
     $ sudo apt install libcups2-dev libcupsimage2 libcupsimage2-dev
     $ ./configure && make
 
+If compiling fails, with undeclared `stderr` and `stdout` errors, you may need to add `#include <stdio.h>` to `pocketjet.h`.
+
 Install drivers
 
     $ sudo cp rastertopocketjet `cups-config --serverbin`/filter
